@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px;
+    text-align: center;
+  }
+  nav a{
+    text-decoration: none;
+    font-size: 0.89rem;
+  }
+
+  div{
+    border: none;
+    height: 175px;
+    width: 100%;
+    
+  }
+  #color{
+   width: 300px;
+   height: 30px;
+   text-align: center;
+   font-size: 16px;
+   outline: 0;
+   letter-spacing:2px;
+   font-weight: bold;
+   border: 1px solid blueviolet;
+  }
+  #btn{
+    height: 35px;
+    width: 91px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    background-color: blueviolet;
+    cursor: pointer;
+  }
+   @media (max-width:768px) {
+    #color{
+      width: 200px;
+    }
+    body{
+      text-align: 1rem;
+    }
+   }
+ #btndark{
+  background: white;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+ }
+ #btnlight{
+  background:black;
+  color:white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+ }
+ a:hover{
+  font-size: 1rem;
+  background-color:skyblue;
+ }
+ #active{
+  font-weight: bold;
+ }
+</style>
+<body id="body">
+  <header style="text-align: center;">
+<h1>Hex Color Code For HTML</h1>
+<nav>
+  | <a href="index.html">Home</a> |
+  <a href="notes.html">Charts</a> |
+  <a id="active" href="others.html">Checker</a> |
+  <a href="Questions.html">About</a> |
+</nav> <hr>
+  </header>
+
+<section style="margin:10px ;">
+  <div id="box">
+    <input type="button" value="Dark mode" id="btndark" onclick="Btndark()">
+    <input type="button" value="Light mode" id="btnlight" onclick="Btnlight()" style="display:none ;">
+  </div>
+  <br>
+  <h5>Hex value of color checker</h5>
+  <input type="text" name="" placeholder="Type here"  id="color">
+  <input type="button" id="btn" value="Apply" onclick="bgcolor()">
+  <p>
+  Test a hex value of any color, Type a Hex color code and check before use it. <br>
+  You also use color name in place of color code. <span style="color:red;"> Ex- #ff0000 or red.</span>
+  </p>
+</section>
+
+  <footer style="text-align:center ;margin-bottom: 10px;"> <hr>
+    <h4>Contact Devloper</h4>
+    <nav>
+   | <a href="https://wa.me/919065407531">whatsapp</a> | 
+    <a href="mailto:rockstarrajnish4658@gmail.com">Email</a> |
+    </nav>
+  </footer>
+  
+</body>
+<script>
+
+  function bgcolor(){
+    a=document.getElementById("color").value;
+   document.getElementById("box").style.background=a
+  }
+  function Btndark(){
+    document.getElementById("body").style.background="black"
+    document.getElementById("body").style.color="#696969"
+    document.getElementById("btnlight").style.display="inline"
+    document.getElementById("btndark").style.display="none"
+
+  }
+  function Btnlight(){
+    document.getElementById("body").style.background="white"
+    document.getElementById("body").style.color="black"
+    document.getElementById("btnlight").style.display="none"
+    document.getElementById("btndark").style.display="inline"
+    
+  }
+ </script>
+
+</html>

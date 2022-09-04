@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    margin: 10px;
+    
+  }
+#head{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  color: maroon;
+}
+#box{
+  display:flex;
+  margin-left: 350px;
+  font-weight: bold;
+  color:blueviolet;
+}
+#lable{
+  margin-right: 60px;
+}
+#btn{
+  text-align: center;
+}
+#sel{
+  width: 300px;
+  background:navajowhite;
+}
+#btn1{
+  background-color: blue;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: white;
+  height: 40px;
+  width: 200px;
+}
+</style>
+<body>
+  <div id="head">
+   <h3>Registration for : EZ IT TRAINING</h3>
+   <h4 style="color:#000000 ;">January 23,2013-4:00 PM to 5:00 PM</h4>
+   <h3>Registrant Information</h3>
+   </div>
+   <div id="box">
+   <div id="lable">
+Company: <br>  <br>
+First Name: <br> <br>
+Last name: <br> <br>
+Email: <br> <br>
+Phone: <br> <br>  
+Address: <br> <br>  
+City: <br> <br>  <br>
+State: <br> <br>
+</div>
+
+<div id="input">
+  <input type="text"> <br>  <br>
+  <input type="text"> <br> <br>
+  <input type="text"> <br>  <br>
+  <input type="text"> <br>  <br>
+ <input type="text"> <br> <br>
+ <input type="text"> <br>  <br>
+  <input type="text"> <br>  <br>
+ <select id="sel">
+    <option value="bihar">Bihar</option>
+    <option value="up">Up</option>
+    <option value="jharkhand">Jharkhand</option>
+    <option value="bengal">Bengal</option>
+  </select>
+</div>
+</div>
+<div id="btn">
+<input type="button" id="btn1" value="Submit My Registration">
+</div>
+</body>
+</html>
+
+                                                 || 2nd project ||
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webdevloper2</title>
+</head>
+<style>
+  body{
+    margin: 1rem;
+    background: blueviolet;
+    color: white;
+  }
+</style>
+<body>
+  <header style="text-align:center ;">
+    <h1>types of dogs breed</h1>
+    <nav>
+     | <a href="">Home</a>|
+      <a href="">About</a>|
+      <a href="">Contact</a>|
+      <a href="">Donate</a>|
+      <a href="">Info</a>|
+    </nav>
+  </header> <hr>
+
+  <section>
+    <h3>This section tells about dangerous breed</h3>
+    <article>
+<h4>American bandogge</h4>
+<p>The true origin of the 'Bandogge' or American Bandog Mastiff is unknown, although it is thought that 
+  the hybrid breed came into existence in Middle England, around 1250-1300. </p>
+    </article>
+    <article>
+    <h4>Cane corso</h4>
+    <p>The Cane Corso[a] is an Italian breed of mastiff. Usually kept as a companion dog or guard dog,
+       it is a descendent of dogs bred in 
+      ancient Rome for war,[2][3][4] and has been used for hunting large game and also to herd cattle.[5]
+      
+    </p>
+    </article>
+    <figure style="text-align: center;">
+      <img src="dogs.jpg" alt="" width="200px">
+      <figcaption>Dogs breeds</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h3>This section tells about friendly breed</h3>
+    <h4>Labrador retiver</h4>
+    <p>The Labrador is loyal, obedient and playful. It was bred as a sporting and hunting dog but is widely kept as a companion dog.
+       It may also be trained as a guide or assistance dog, labrador are avilable on three types of color chocolate, golden and brown.
+
+    </p>
+        </article>
+        <article>
+        <h4>Pug</h4>
+        <p>
+          The Pug is a breed of dog originally from China, with physically distinctive features of a wrinkly, short-muzzled face and 
+          curled tail. The breed has a fine, glossy coat that comes in a variety of colors, most often light brown (fawn) or black, and
+           a compact, square body with well developed and thick muscles all over the body.
+        </p>
+        </article>
+  </section>
+  <details>
+    <summary>This is a article written by: </summary>
+<p>Webdevloper2</p>
+<p>Rajnish kumar</p>
+  </details>
+  <footer style="text-align:center ;">
+<hr>
+<p>created by Webdevloper2</p>
+<p>| Youtube | Twitter | Facebook | Reddit | Instagram | </p>
+  </footer>
+</body>
+</html>
+
+
+
+                                      3rd project
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  div{
+    border: none;
+    height: 300px;
+    width: 100%;
+  }
+  #color{
+   width: 300px;
+   height: 30px;
+   text-align: center;
+   font-size: 16px;
+   outline: 0;
+   letter-spacing:2px;
+   font-weight: bold;
+   border: 1px solid blueviolet;
+  }
+  #btn{
+    height: 35px;
+    width: 91px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    background-color: blueviolet;
+  }
+  
+</style>
+<body>
+  
+  <div id="box" ></div><br>
+  <input type="text" name="" id="color">
+  <input type="button" id="btn" value="Apply" onclick="bgcolor()">
+  <p>The color of box will change through enter the color name in given input box and click on apply button.</p>
+   <p> You can apply color both ways </p>
+   <p>
+    1. Color name - red, blue, green. <br>
+    2. Hex Color code - #FF0000, #0000FF, #00FF00
+   </p>
+  
+</body>
+<script>
+  function bgcolor(){
+    a=document.getElementById("color").value;
+   document.getElementById("box").style.background=a
+  }
+ </script>
+</html>

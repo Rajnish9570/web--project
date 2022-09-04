@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    margin: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  #colorbg,#colortext{
+    height: 30px;
+    width: 200px;
+    color: white;
+    background-color: blueviolet;
+    border: 0;
+    outline: 0;
+  }
+  #bgcolor,#textcolor{
+    height: 30px;
+    width: 200px;
+    color: white;
+    background-color: blueviolet;
+    outline: none;
+    border: 2px  solid white;
+  }
+  #a{
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: bold;
+    background-color: aliceblue;
+  }
+</style>
+<body id="body">
+  <div class="bg" >
+   <p>Change theme of Background.</p>
+    <input type="color" id="bgcolor"><br>
+    <input type="button" id="colorbg" value="Change Background Theme." onclick="bg()">
+  </div>
+  <br>
+  <div class="text">
+   <p>Change theme of text.</p>
+    <input type="color" id="textcolor"><br>
+    <input type="button" id="colortext" value="Change font Theme." onclick="text()">
+  </div>
+
+  <p> Note: Box appear's in black color is color box (choose from here). </p>
+  <hr>
+ <a id="a" style="text-decoration:none;" href="Questions.html">Back</a>
+ <p>Hey i am Rajnish here creater of this website. </p>
+<p>Contact me as frontend design  of your static website. </p>
+<p>Meet web designer in on touch  
+  | <a id="a" href="mailto:rockstarrajnish4658@gmail.com">Email</a> |
+</p>
+<p>
+  Direct message me for frontend design.
+  | <a id="a" href="https://wa.me/919065407531">whatsapp</a> |
+</p>
+<p>100% satisfiying work provide to our customer.</p>
+<p>Work on time as your demands</p>
+<p style="margin-bottom:10px ;">Website: <a id="a" href="https://rajnish9570.github.io/project-calculator/">https://rajnish9570.github.io/project-calculator/</a></p>
+</body>
+<script>
+  function bg(){
+    a=document.getElementById("bgcolor").value;
+document.getElementById("body").style.backgroundColor=a
+  }
+
+  function text(){
+    b=document.getElementById("textcolor").value;
+document.getElementById("body").style.color=b
+  }
+</script>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px;
+    text-align: center;
+  }
+  nav a{
+    text-decoration: none;
+    font-size: 0.89rem;
+  }
+  a:hover{
+  font-size: 1rem;
+  background-color:skyblue;
+ }
+ #btndark{
+  background: white;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+ }
+ #btnlight{
+  background:black;
+  color:white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+ }
+ #active{
+  font-weight: bold;
+ }
+
+</style>
+<body id="body">
+  <header style="text-align: center;">
+<h1>Hex Color Code For HTML</h1>
+<nav>
+  | <a href="index.html">Home</a> |
+  <a href="notes.html">Charts</a> |
+  <a href="others.html">Checker</a> |
+  <a id="active" href="Questions.html">About</a> |
+</nav> <hr>
+  </header>
+
+<section style="margin:10px;">
+  <div id="box" >
+    <input type="button" value="Dark mode" id="btndark" onclick="Btndark()">
+    <input type="button" value="Light mode" id="btnlight" onclick="Btnlight()" style="display:none ;">
+  </div>
+<h5>About Developer</h5>
+<p>Rajnish kumar <br> Rajeev Nagar Road no. 23, Patna 800024</p>
+<h5>About Website</h5>
+<p>This is page about all hex value of color we use in html <br> We provide hex value of color to copy and use it <br>
+we also provide a hex value checker, check color code before use it. </p>
+<button id="projectbtn"><a style="text-decoration: none;font-weight: bold;" href="project.html">View Project</a></button> <br>
+Get my another project in one touch on View project.
+</section>
+
+
+ <footer style="text-align:center; margin-bottom: 10px;"> <hr>
+    <h4>Contact Devloper</h4>
+    <nav>
+   | <a href="https://wa.me/919065407531">whatsapp</a> | 
+    <a href="mailto:rockstarrajnish4658@gmail.com">Email</a> |
+    </nav>
+  </footer>
+</body>
+<script>
+  function Btndark(){
+    document.getElementById("body").style.background="black"
+    document.getElementById("body").style.color="#696969"
+    document.getElementById("btnlight").style.display="inline"
+    document.getElementById("btndark").style.display="none"
+
+  }
+  function Btnlight(){
+    document.getElementById("body").style.background="white"
+    document.getElementById("body").style.color="black"
+    document.getElementById("btnlight").style.display="none"
+    document.getElementById("btndark").style.display="inline"
+    
+  }
+</script>
+</html>

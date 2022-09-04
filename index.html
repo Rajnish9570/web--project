@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px;
+  }
+  nav a{
+    text-decoration: none;
+    font-size: 0.89rem;
+    
+  }
+  #color{
+    height: 40px;
+    width: 150px;
+    border: 2px solid black;
+    text-align: center;
+  }
+ #btn{
+  height: 20px;
+    width:150px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+ }
+ p{
+  text-align: justify;
+ }
+ #btndark{
+  background: white;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+ }
+ #btnlight{
+  background:black;
+  color:white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+ }
+ a:hover{
+  font-size: 1rem;
+  background-color:skyblue;
+ }
+ #active{
+  font-weight: bold;
+ }
+</style>
+<body id="body">
+  <header style="text-align: center;">
+<h1>Hex Color Code For HTML</h1>
+<nav>
+  | <a id="active" href="index.html">Home</a> |
+  <a href="notes.html">Charts</a> |
+  <a href="others.html">Checker</a> |
+  <a href="Questions.html">About</a> |
+</nav> <hr>
+  </header>
+
+<section style="margin:10px ;">
+  <div id="box" style="text-align: center;">
+    <input type="button" value="Dark mode" id="btndark" onclick="Btndark()">
+    <input type="button" value="Light mode" id="btnlight" onclick="Btnlight()" style="display:none ;">
+  </div>
+  <p>
+<h5>What is hex color code ?</h5>
+  Hex color code is a hexa decimal value of color. It is a way to represent a color in RGB format. It contain only 6 digits 
+  with # symbol. After # symbol we write first two digits for red and second two digits for green and last two digits for blue.
+  In hex color code contain number 0 to 225 and alphabet A to F.
+</p>
+<p>
+  <h5>What is RGB ?</h5>
+  RGB stands for R- red, G- green, B- blue. computer or any digital divice are understand only three colors that is RGB (red, green, blue). 
+  All others colors formed by mixing only this three color (RGB) in different different ratio. Example-  100% red; 100% green; 100% blue = White.
+  The other Example is- 00% red; 00% green; 00% blue = Black.
+</p>
+</section>
+<section style="margin:10px ;">
+  Click on arrow <br> <br>
+  <details>
+    <summary>Website created by:</summary>
+    Rajnish Kumar
+  </details>
+  
+</section>
+  <footer style="text-align:center ;margin-bottom: 10px;"> <hr>
+    <h4>Contact Devloper</h4>
+    <nav>
+   | <a href="https://wa.me/919065407531">whatsapp</a> | 
+    <a href="mailto:rockstarrajnish4658@gmail.com">Email</a> |
+    </nav>
+  </footer>
+</body>
+<script>
+  function funcbtn(){
+  a=document.getElementById("color").value;
+  document.getElementById("text").innerHTML=a
+}
+ 
+function Btndark(){
+    document.getElementById("body").style.background="black"
+    document.getElementById("body").style.color="#696969"
+    document.getElementById("btnlight").style.display="inline"
+    document.getElementById("btndark").style.display="none"
+
+  }
+  function Btnlight(){
+    document.getElementById("body").style.background="white"
+    document.getElementById("body").style.color="black"
+    document.getElementById("btnlight").style.display="none"
+    document.getElementById("btndark").style.display="inline"
+    
+  }
+</script>
+</html>
